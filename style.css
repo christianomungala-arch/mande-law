@@ -192,3 +192,17 @@ footer a.text-muted:hover {
     font-size: 1.8rem;
   }
 }
+/* ===== HERO TEXT COLOURS ===== */
+.text-navy {
+  color: var(--navy) !important;
+}
+.text-navy-light {
+  color: var(--navy-light) !important;
+}
+.text-gold {
+  color: var(--gold) !important;
+}
+.letter-spacing {
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+}
