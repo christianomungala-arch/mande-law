@@ -28,3 +28,45 @@ if (backToTop) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 }
+// ===== SERVICES FILTER =====
+const serviceFilterBtns = document.querySelectorAll('.filter-btn');
+const serviceCards = document.querySelectorAll('.service-card');
+const noResults = document.getElementById('noResults');
+
+serviceFilterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+
+    // Reset all buttons
+    serviceFilterBtns.forEach(b => {
+      b.classList.remove('btn-navy', 'active');
+      b.classList.add('btn-outline-navy');
+    });
+
+    // Highlight clicked button
+    btn.classList.remove('btn-outline-navy');
+    btn.classList.add('btn-navy', 'active');
+
+    const filterValue = btn.getAttribute('data-filter');
+    let visibleCount = 0;
+
+    // Show or hide cards
+    serviceCards.forEach(card => {
+      const category = card.getAttribute('data-category');
+      if (filterValue === 'all' || category === filterValue) {
+        card.style.display = 'block';
+        visibleCount++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    // Show no results message if needed
+    if (noResults) {
+      if (visibleCount === 0) {
+        noResults.classList.remove('d-none');
+      } else {
+        noResults.classList.add('d-none');
+      }
+    }
+  });
+});
