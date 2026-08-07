@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact M & E Advocates at The Pavilion Westlands Nairobi. Book a free legal consultation today." />
+  <title>M & E Advocates | Contact Us</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar navbar-expand-lg sticky-top shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4" href="index.html">
+        <i class="bi bi-bank2"></i> M & E <span>Advocates</span>
+      </a>
+      <button class="navbar-toggler border-0" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="attorneys.html">Attorneys</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+        <button class="btn btn-outline-navy ms-3" id="darkModeBtn"
+          aria-label="Toggle dark mode">
+          <i class="bi bi-moon-fill"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== PAGE HEADER ========== -->
+  <section class="page-header text-center py-5">
+    <div class="container">
+      <h1 class="fw-bold display-5">Contact Us</h1>
+      <p class="lead">Book a free consultation or send us a message. We respond within 24 hours.</p>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-center">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active">Contact</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-5">
+
+        <!-- Left: Form -->
+        <div class="col-md-7">
+          <h3 class="fw-bold text-navy mb-4">Send Us a Message</h3>
+          <form id="contactForm" novalidate>
+
+            <!-- Name -->
+            <div class="mb-3">
+              <label for="name" class="form-label fw-semibold text-navy">
+                Full Name
+              </label>
+              <input type="text" class="form-control" id="name"
+                placeholder="e.g. John Kamau" />
+              <div class="invalid-feedback">Please enter your full name.</div>
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+              <label for="email" class="form-label fw-semibold text-navy">
+                Email Address
+              </label>
+              <input type="email" class="form-control" id="email"
+                placeholder="e.g. john@gmail.com" />
+              <div class="invalid-feedback">Please enter a valid email address.</div>
+            </div>
+
+            <!-- Phone -->
+            <div class="mb-3">
+              <label for="phone" class="form-label fw-semibold text-navy">
+                Phone Number
+              </label>
+              <input type="tel" class="form-control" id="phone"
+                placeholder="e.g. 0712 345 678" />
+              <div class="invalid-feedback">
+                Please enter a valid Kenyan phone number.
+              </div>
+            </div>
+
+            <!-- Service -->
+            <div class="mb-3">
+              <label for="subject" class="form-label fw-semibold text-navy">
+                Legal Matter
+              </label>
+              <select class="form-select" id="subject">
+                <option value="">-- Select a practice area --</option>
+                <option value="corporate">Corporate Law</option>
+                <option value="litigation">Litigation</option>
+                <option value="realestate">Real Estate & Conveyancing</option>
+                <option value="family">Family Law</option>
+                <option value="criminal">Criminal Defense</option>
+                <option value="employment">Employment Law</option>
+                <option value="other">Other</option>
+              </select>
+              <div class="invalid-feedback">Please select a legal matter.</div>
+            </div>
+
+            <!-- Message -->
+            <div class="mb-3">
+              <label for="message" class="form-label fw-semibold text-navy">
+                Brief Description
+              </label>
+              <textarea class="form-control" id="message" rows="5"
+                placeholder="Briefly describe your legal matter..."></textarea>
+              <div class="invalid-feedback">
+                Please enter a description (at least 20 characters).
+              </div>
+            </div>
+
+            <!-- Submit -->
+            <button type="submit" class="btn btn-navy btn-lg w-100">
+              <i class="bi bi-send-fill me-2"></i>Send Message
+            </button>
+
+            <!-- Success -->
+            <div class="alert mt-3 d-none" id="successMsg"
+              style="background-color:var(--gold);color:var(--navy);">
+              <i class="bi bi-check-circle-fill me-2"></i>
+              Thank you! We have received your message and will get
+              back to you within 24 hours.
+            </div>
+
+          </form>
+        </div>
+
+        <!-- Right: Contact Info -->
+        <div class="col-md-5">
+          <h3 class="fw-bold text-navy mb-4">Get In Touch</h3>
+
+          <div class="d-flex mb-4">
+            <div class="rounded-circle d-flex align-items-center
+              justify-content-center me-3 text-white flex-shrink-0"
+              style="width:50px;height:50px;background-color:var(--navy);">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <div>
+              <h6 class="fw-bold text-navy mb-1">Our Location</h6>
+              <p class="text-muted mb-0">
+                The Pavilion, Westlands<br>Nairobi, Kenya
+              </p>
+            </div>
+          </div>
+
+          <div class="d-flex mb-4">
+            <div class="rounded-circle d-flex align-items-center
+              justify-content-center me-3 text-white flex-shrink-0"
+              style="width:50px;height:50px;background-color:var(--gold);">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <div>
+              <h6 class="fw-bold text-navy mb-1">Phone</h6>
+              <p class="text-muted mb-0">
+                +254 700 123 456<br>
+                Mon – Fri, 8am – 6pm
+              </p>
+            </div>
+          </div>
+
+          <div class="d-flex mb-4">
+            <div class="rounded-circle d-flex align-items-center
+              justify-content-center me-3 text-white flex-shrink-0"
+              style="width:50px;height:50px;background-color:var(--navy);">
+              <i class="bi bi-envelope-fill"></i>
+            </div>
+            <div>
+              <h6 class="fw-bold text-navy mb-1">Email</h6>
+              <p class="text-muted mb-0">
+                info@mandeadvocates.co.ke<br>
+                emmanuel@mandeadvocates.co.ke
+              </p>
+            </div>
+          </div>
+
+          <div class="d-flex mb-4">
+            <div class="rounded-circle d-flex align-items-center
+              justify-content-center me-3 text-white flex-shrink-0"
+              style="width:50px;height:50px;background-color:var(--gold);">
+              <i class="bi bi-clock-fill"></i>
+            </div>
+            <div>
+              <h6 class="fw-bold text-navy mb-1">Working Hours</h6>
+              <p class="text-muted mb-0">
+                Monday – Friday: 8am – 6pm<br>
+                Saturday: 9am – 1pm<br>
+                Sunday: Closed
+              </p>
+            </div>
+          </div>
+
+          <!-- Free Consultation Card -->
+          <div class="card border-0 p-4 mt-2 text-center"
+            style="background-color:var(--navy);">
+            <i class="bi bi-calendar-check-fill mb-2 fs-2"
+              style="color:var(--gold);"></i>
+            <h6 class="fw-bold text-white mb-2">Free Initial Consultation</h6>
+            <p class="small mb-0" style="color:rgba(255,255,255,0.7);">
+              Book a free 30-minute consultation with Emmanuel Mumia
+              and get honest legal advice at no cost.
+            </p>
+          </div>
+
+          <!-- Social Media -->
+          <h6 class="fw-bold text-navy mt-4 mb-3">Follow Us</h6>
+          <div class="d-flex gap-2">
+            <a href="#" class="btn btn-outline-secondary">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="#" class="btn btn-outline-secondary">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="#" class="btn btn-outline-secondary">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="#" class="btn btn-outline-secondary">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
