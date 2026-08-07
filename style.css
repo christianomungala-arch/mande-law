@@ -206,3 +206,35 @@ footer a.text-muted:hover {
   letter-spacing: 2px;
   font-size: 0.85rem;
 }
+/* ===== NAVBAR TOGGLER FIX ===== */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* ===== CARD EQUAL HEIGHT FIX ===== */
+.row.g-4 {
+  align-items: stretch;
+}
+
+/* ===== FORM FOCUS COLOUR ===== */
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 0.2rem rgba(201, 168, 76, 0.25);
+}
+
+/* ===== ACCORDION ACTIVE COLOUR ===== */
+.accordion-button:not(.collapsed) {
+  background-color: var(--navy);
+  color: white;
+}
+.accordion-button:not(.collapsed)::after {
+  filter: invert(1);
+}
+
+/* ===== BADGE STYLING ===== */
+.badge {
+  font-weight: 500;
+  font-size: 0.78rem;
+  padding: 5px 10px;
+}
